@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+body {
+    background-color: gainsboro;
+    color: rgb(85, 79, 85);
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url(images/hex2.jpg);
+}
+
+header h1 {
+    font-size: 3.8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: .5em;
+    color: rgb(85, 79, 85);
+    text-decoration-line: underline;
+    -webkit-text-stroke: .04em black;
+    display: inline;
+    float: left;
+}
+
+.banner {
+    margin: 0 .3% 0 .3%;
+    height: auto;
+    width: 99.4%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: .3em;
+    padding-right: 1em;
+    float: right;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    border: .2em inset black;
+    width: 8em;
+    display: inline-block;
+    border-radius: 1.8em;
+    padding: .8em;
+    color: black;
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: maroon;
+}
+
+nav a:hover {
+    color: #965251;
+    background-color: rgb(199, 197, 197);
+}
+
+main ul {
+    list-style-type: none;
+    padding: 2em 7.5% 2em 7.5%;
+    margin: 0 1.5% 0 1.5%;
+    display: inline;
+}
+
+main li {
+    padding-top: 2em;
+    display: inline;
+}
+
+main img {
+    border-radius: 5em;
+    border: .35em solid black;
+    padding: .3em;
+    width: 10em;
+    height: 7em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}   
+
+.flex-item {
+    background-color: rgb(85, 79, 85);
+    border-radius: 4em;
+    border: .3em solid black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    height: auto;
+    width: 27%;
+    padding: 1em 1em 1em 1em;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+    display: inline-block;
+    image-orientation: inherit;
+}
+
+.weld img {
+    float: left;
+    margin: 0 1.5em .5em 0;
+    width: 10em;
+    height: 7em;
+}
+
+.weld {
+    background-color: rgb(85, 79, 85);
+    border-radius: 4em;
+    border: .3em solid black;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    height: auto;
+    width: 95%;
+    padding: 1em 1em 1em 1em;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+    display: block;
+}
+
+.address {
+    font-weight: bold; 
+    text-align: center;
+    color: black;
+}
+
+footer {
+    background-color: whitesmoke;
+    font-weight: bold;
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+}
+
+#wrapper {
+    background-image: url(images/steel.jpg);
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: whitesmoke;
+    min-width: 900px;
+    max-width: 1280px;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#search {
+font-family: Impact, 'Arial Narrow Bold', sans-serif;   
+float: right; 
+margin: 0 0 0 0;
+padding: 1em 1em 0 0;
+color: black;
+line-height: 75%;
+} 
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        background-image: none;
+    }
+
+    #wrapper {
+        height: auto;
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    header {
+        border-bottom: 5px solid gainsboro;
+    }
+
+    h1 {
+        width: 55%;
+        height: auto;
+    }
+
+    nav {
+        float: right;
+        padding-top: 0;
+        margin: 0em;
+        font-size: 1em;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        margin: .05em;
+        padding: 0.2em;
+        width: 5em;
+        font-weight: bold;
+        border: solid black;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 1.8em;
+    }
+
+    .address {
+        text-align: center;
+        color: black;
+    }
+
+    main {
+        margin: 0 2% 0 2%;
+        font-size: 90%;
+    }
+    
+    .flex-item {
+        background-color: rgb(85, 79, 85);
+        border-radius: 4em;
+        border: .3em solid black;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: white;
+        height: auto;
+        width: 35%;
+        padding: 1em .4em 1em .3em;
+        margin: 2em 1em 1.5em 0em;
+        display: inline-block;
+        image-orientation: inherit;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        width: 100%;
+        font-size: 2em;
+        text-align: center;
+        padding: .15em .35em 0 .15em;
+    }
+
+    nav {
+        margin: 0em 0em 0em 0em;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: .2em .2em .2em .2em;
+        width: 100%;
+        border: solid black;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0em .55em 0em .08em;
+    }
+
+    main {
+        padding-top: 0em;
+        margin-top: 0em 
+    }
+
+    h2 {
+        padding: 0.5em 0 0 0.4em;
+        margin: .2em 0 0 0;
+        display: inline-block;
+    }
+
+    main img {
+        float: left;
+        margin: 0 1.5em .5em 0;
+        width: 10em;
+        height: 7em;
+    }
+
+    .flex-container {
+        display: inline-block;
+        flex-direction: row;
+    }
+    
+    .flex-item {
+        background-color: rgb(85, 79, 85);
+        border-radius: 4em;
+        border: .3em solid black;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        height: auto;
+        width: auto;
+        padding: 1em 1em 1em 1em;
+        margin: 1em 0.1em .5em 0.6em;
+        display: block;
+    }
+
+    .weld img {
+        float: left;
+        margin: 1em 1.5em .5em 0;
+        width: 10em;
+        height: 7em;
+    }
+    
+    .weld {
+        background-color: rgb(85, 79, 85);
+        border-radius: 4em;
+        border: .3em solid black;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        height: auto;
+        width: 95%;
+        padding: 0em 1em 1em 1em;
+        margin: 1.5em 0.1em 1em 0.6em;
+        display: inline-block;
+    }
+
+    .address {
+        font-weight: bolder; 
+        text-align: center;
+        color: black;
+        -webkit-text-stroke: .05em white;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+}

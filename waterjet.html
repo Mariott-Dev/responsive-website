@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="S&S Welding has created specialty tools for numerous highly respected industrial firms with its Waterjet Cutting table.">
+    <meta name="keywords"
+        content="Waterjet Steel Cutting, Waterjet Alloy Cutting, Waterjet Stone Cutting, Waterjet Composite Cutting, Waterjet Tool Cutting, Waterjet Design Cutting">
+    <meta name="author" content="Dane Mariott">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S&S Welding</title>
+    <link rel="stylesheet" type="text/css" href="sswelding.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- HTML5 Enabling Script -->
+    <!--[if lt IE 9]>
+   		<script src="html5shiv.js"></script>
+          <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#searchbox").val("Search the WWW");
+            $("input").focus(function () {
+                $("#searchbox").css("background-color", "#ccc");
+                $("#searchbox").val(null);
+            });
+            $("input").blur(function () {
+                $("#searchbox").css("background-color", "#fff");
+                $("#searchbox").val("Search the WWW");
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138579905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138579905-1');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html">
+                <h1>S&S Welding, Inc.</h1>
+            </a>
+            <!-- SiteSearch Google -->
+            <form method="get" action="http://www.google.com/search">
+                <div id="search">
+                    <label for="searchbox">Search:</label>
+                    <input id="searchbox" name="searchinput" size="20" maxlength="255" value="" type="text" />
+                    <input type="image" src="images/search.png" alt="Search">
+                </div>
+            </form>
+            <!-- End SiteSearch Google -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="welding.html">Welding</a></li>
+                    <li><a href="waterjet.html">Waterjet</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="banner" src="images/waterjetban.jpg" alt="Waterjet Banner">
+            <div class="weld">
+                <img src="images/water3.PNG" alt="Waterjet Diagram">
+                <h2>HOW IT WORKS</h2>
+                <p>You could argue that "waterjet" is a bit of a misnomer, as the reality is that an abrasive is used to
+                    cut materials in addition to pressurized water. This is a bit like highly focused sandblasting with
+                    a water component. Existing templates or specialty designs are entered into the waterjet's computer
+                    and precision cuts are executed by the machine with respect to the thickness and composition of the
+                    material being cut. S&S Waterjet is an approximately 6x8 foot cut surface with a 2D axis.</p>
+            </div>
+            <div class="weld">
+                <img src="images/water1.PNG" alt="Steel Cutting">
+                <h2>STEEL CUTTING</h2>
+                <p>One of the amazing things about waterjet cutting is an ability to cut sensitive materials without
+                    warping and flammable materials without burning. Portable waterjet machines are often used to cut
+                    reactors out of refineries without setting them ablaze. It is also important to note that waterjet
+                    tables are not inhibited by metallurgy the way that cutting torches are. All alloys and mild steels
+                    can be cut by waterjet regardless of composition as opposed to the limits and distortions of
+                    torches.</p>
+            </div>
+            <div class="weld">
+                <img src="images/water2.PNG" alt="Stone Cutting">
+                <h2>STONE & COMPOSITES</h2>
+                <p>City, county, and company signage stones are regularly cut by S&S Welding. Stones can be cut clean
+                    through and backlit or steel templates can be cut and placed over the stones to allow controlled
+                    depth sandblasting and painting. Granite counter tops and specialty composites for any manner of
+                    application can be designed and cut by our waterjet table. Concretes, tiles, bricks, slate, and
+                    heavy plastics for civil construction have all been handled regardless of properties and specific
+                    considerations.</p>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2019 S&S Welding
+            <br>
+            <a href="mailto:dane.mariott@aggiemail.usu.edu">dane.mariott@aggiemail.usu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>

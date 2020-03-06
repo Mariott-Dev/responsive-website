@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="S&S Welding is the one stop fabrication shop with all welding capabilities, waterjet cutting, machining, and powdercoating. ">
+    <meta name="keywords"
+        content="Certified Welding, Specialty Welding, Waterjet Cutting, Construction, Fabrication, Project Design, Oilfield, Industrial, Civil Construction">
+    <meta name="author" content="Dane Mariott">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S&S Welding</title>
+    <link rel="stylesheet" type="text/css" href="sswelding.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- HTML5 Enabling Script -->
+    <!--[if lt IE 9]>
+   		<script src="html5shiv.js"></script>
+          <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#searchbox").val("Search the WWW");
+            $("input").focus(function () {
+                $("#searchbox").css("background-color", "#ccc");
+                $("#searchbox").val(null);
+            });
+            $("input").blur(function () {
+                $("#searchbox").css("background-color", "#fff");
+                $("#searchbox").val("Search the WWW");
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138579905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138579905-1');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html">
+                <h1>S&S Welding, Inc.</h1>
+            </a>
+            <!-- SiteSearch Google -->
+            <form method="get" action="http://www.google.com/search">
+                <div id="search">
+                    <label for="searchbox">Search:</label>
+                    <input id="searchbox" name="searchinput" size="20" maxlength="255" value="" type="text" />
+                    <input type="image" src="images/search.png" alt="Search">
+                </div>
+            </form>
+            <!-- End SiteSearch Google -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="welding.html">Welding</a></li>
+                    <li><a href="waterjet.html">Waterjet</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="banner" src="images/homeban.jpg" alt="Fabrication Shop Banner">
+            <ul class="flex-container">
+                <li class="flex-item">
+                        <img src="images/industry.png" alt="Industrial Clipart"><br>
+                        <h2>WORKING</h2>
+                        <p>The utility of Welding and Waterjet cutting encompasses a broad range of applications from
+                            industrial to artistic. S&S Welding has welded and fabricated process systems for
+                            refineries, power plants, paper mills, chemical facilities, oil and gas well locations,
+                            pipelines, compressor
+                            stations, drilling rigs, and more. S&S Welding has also Waterjet cut specialty parts from
+                            gears and tools to decorative stones and construction composites.</p>
+                </li>
+                <li class="flex-item">
+                        <img src="images/welder.png" alt="Welder Clipart"><br>
+                        <h2>WELDING</h2>
+                        <p>With mig, tig, and stick Welding capabilities, S&S Welding is perfectly positioned to
+                            accomplish any welding task. S&S Welding has repaired industrial aluminum sand haul
+                            semi-tankers,
+                            built aluminum steps and wind walls for drilling rigs, and repaired aluminum automotive
+                            parts as
+                            well. S&S Welding has also performed a litany of stainless steel welding from purged
+                            process piping to medical grade stainless applications. </p>
+                </li>
+                <li class="flex-item">
+                        <img src="images/waterjet.png" alt="Waterjet Clipart"><br>
+                        <h2>WATERJET</h2>
+                        <p>The Waterjet cutting system is a revolution in fabrication for its ability to cut identical
+                            parts in volume like specialty hinges, handles, levers, gears, hand tools, and tank volume
+                            testers. S&S Waterjet is capable of cutting thin gauge mild steel and inch thick tool steel
+                            without warping or distortion. Home decorators and city planners also love the Watrerjet's
+                            ability to carve large stones and various signage.</p>
+                </li>
+            </ul>
+            <div class="address">
+                925 E. 1500 W.<br>
+                Vernal, UT.<br>
+                <a id="mobile" href="tel:435-828-6179">435-828-6179</a>
+                <span id="desktop">435-828-6179</span><br><br>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2019 S&S Welding
+            <br>
+            <a href="mailto:dane.mariott@aggiemail.usu.edu">dane.mariott@aggiemail.usu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>

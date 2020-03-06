@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="S&S Welding is certified and insured with 25 years in the welding business.">
+    <meta name="keywords"
+        content="Stick Welding, Mig Welding, Tig Welding, Rig Welding, Shop Welding, Mobile Welding, Mild Steel Welding, Aluminum Welding, Stainless Steel Welding, Alloy Welding">
+    <meta name="author" content="Dane Mariott">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S&S Welding</title>
+    <link rel="stylesheet" type="text/css" href="sswelding.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- HTML5 Enabling Script -->
+    <!--[if lt IE 9]>
+   		<script src="html5shiv.js"></script>
+          <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#searchbox").val("Search the WWW");
+            $("input").focus(function () {
+                $("#searchbox").css("background-color", "#ccc");
+                $("#searchbox").val(null);
+            });
+            $("input").blur(function () {
+                $("#searchbox").css("background-color", "#fff");
+                $("#searchbox").val("Search the WWW");
+            });
+        });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138579905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138579905-1');
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html">
+                <h1>S&S Welding, Inc.</h1>
+            </a>
+            <!-- SiteSearch Google -->
+            <form method="get" action="http://www.google.com/search">
+                <div id="search">
+                    <label for="searchbox">Search:</label>
+                    <input id="searchbox" name="searchinput" size="20" maxlength="255" value="" type="text" />
+                    <input type="image" src="images/search.png" alt="Search">
+                </div>
+            </form>
+            <!-- End SiteSearch Google -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="welding.html">Welding</a></li>
+                    <li><a href="waterjet.html">Waterjet</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="banner" src="images/weldingban.jpg" alt="Welding Banner">
+            <div class="weld">
+                <img src="images/weld3.PNG" alt="Tig Welding">
+                <h2>TIG WELDING</h2>
+                <p>S&S Welding has a wealth of experience with heliarc/tig welding from purged alloy process piping in
+                    industrial plants to mechanical grade aluminum sand hauling tankers. S&S has welded alloys ranging
+                    from high nickel-chromoly content piping like Inconel to low carbon content stainless like 304 and
+                    316. Special attention to heat sensitive material and penetration requirements are fully understood
+                    here. Drilling Kellys requiring full penetration with zero internal bead tolerance are tig welded
+                    regularly.</p>
+            </div>
+            <div class="weld">
+                <img src="images/weld2.PNG" alt="Mig Welding">
+                <h2>MIG WELDING</h2>
+                <p>High volume, high tensile strength dual shield welding is an S&S specialty. S&S Welding has designed
+                    and fabricated tong truck crane beds, lay-down machines, bucket rigs, track rigs, drilling buckets,
+                    core barrels, over-the-road winch beds, chain racks, tool boxes, motor houses, pump sheds,
+                    electrical skids, pipe racks/tubs, dog houses, rig derricks, tail rolls, wind walls, cement mixers,
+                    separator skids, open-top tanks, and much more. Hard-facing, pad-welding, and fish-plating are also
+                    regular occurrences.</p>
+            </div>
+            <div class="weld">
+                <img src="images/weld1.PNG" alt="Stick Welding">
+                <h2>STICK WELDING</h2>
+                <p>S&S Welding has performed traditional stick welding in virtually every venue imaginable, beginning
+                    with API 1104 x-ray and destructive testing for industrial plant work and ending with branch saddle
+                    Tee x-ray and destructive testing for oilfield pipeline and well location construction. Refineries,
+                    paper mills, power plants, chemical facilities, compressor stations, well locations, pipelines,
+                    gathering lines, rig maintenance, machine repair, bridge construction, and civil project have all
+                    been tackled by S&S.</p>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2019 S&S Welding
+            <br>
+            <a href="mailto:dane.mariott@aggiemail.usu.edu">dane.mariott@aggiemail.usu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>
